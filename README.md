@@ -6,13 +6,13 @@
 
 ## 关于项目
 
-`YourPrjkt` 是一个旨在学习和演示如何在 Unreal Engine 中使用 Game Animation Sample (GAS) 来创建复杂角色技能和属性系统的动作游戏原型，由个人开发。
+`YourPrjkt` 是一个旨在学习和演示如何在 Unreal Engine 中使用 Game Animation Sample (GAS) 来创建复杂角色技能和属性系统的动作游戏原型，由[我](https://github.com/OneCuriousLearner)开发。
 
 这个项目主要包含以下内容：
 
 * 一个基础的战斗系统，包括角色移动、跳跃、攻击等基本动作。
 * 角色状态管理，使用 GAS 来定义和触发技能。
-* 简单的敌人 AI，用于演示敌人的行为。（开发中）
+* 简单的敌人 AI，用于控制敌人的行为。（开发中）
 * 简短的剧情，便于了解世界观。（开发中）
 
 项目的名字没有任何特殊意义，只是为了方便起见。
@@ -35,8 +35,8 @@
 
 请确保您已安装以下软件：
 
-* **Unreal Engine 5.4:** [下载链接](https://www.unrealengine.com/en-US/download)
-* **Visual Studio 2022:** [下载链接](https://visualstudio.microsoft.com/vs/)
+* **Unreal Engine 5.4:** [下载虚幻引擎 - Unreal Engine](https://www.unrealengine.com/zh-CN/download)
+* **Visual Studio 2022:** [Visual Studio 2022 IDE - 适用于软件开发人员的编程工具](https://visualstudio.microsoft.com/zh-hans/vs/)
   * 请确保安装了 "Game development with C++" 工作负载。
 * **Git LFS:** [下载与安装指南](https://git-lfs.github.com/)
   * 本项目包含一些较大的资源文件，建议使用 Git LFS 进行管理。
@@ -154,5 +154,5 @@ OneCuriousLearner - [j15112850518@163.com](mailto:j15112850518@163.com)
 
 ### 致谢
 
-* [Unreal Engine 官方文档](https://docs.unrealengine.com/)
-* [Bilibili@原子之音](https://space.bilibili.com/437860379)
+* [最强大的实时3D创作工具 - Unreal Engine](https://www.unrealengine.com/zh-CN)
+* [原子之音个人主页-哔哩哔哩视频](https://space.bilibili.com/437860379)
