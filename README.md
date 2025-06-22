@@ -97,8 +97,8 @@ Content/
 │  │  ├─RamsterZ/                   # RamsterZ 动作资产
 │  │  └─SwordAnim/                  # Sword Animation 动作资产
 │  ├─Blueprint/                     # 蓝图资产
-│  │  ├─Character/                  # 蓝图角色
-│  │  ├─Component/                  # 蓝图组件
+│  │  ├─Character/                  # 角色蓝图
+│  │  ├─Component/                  # 组件蓝图
 │  │  ├─InteractiveObject/          # 交互物品
 │  │  └─Notify/                     # 通知蓝图
 │  ├─Level/                         # 关卡
