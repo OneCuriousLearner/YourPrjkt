@@ -6,7 +6,7 @@
 
 ## 关于项目
 
-`YourPrjkt` 是一个旨在学习和演示如何在 Unreal Engine 中使用 Game Animation Sample (GAS) 来创建复杂角色技能和属性系统的动作游戏原型，由[我](https://github.com/OneCuriousLearner)开发。
+`YourPrjkt` 是一个旨在学习和演示如何在 Unreal Engine 中使用 Game Animation Sample (GAS) 来创建简单角色技能和属性系统的动作游戏原型，由[我](https://github.com/OneCuriousLearner)开发。
 
 这个项目主要包含以下内容：
 
