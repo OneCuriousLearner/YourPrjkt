@@ -1,0 +1,2 @@
+# YourPrjkt
+一个融合了GASP的简单动作游戏DEMO，暂时停止开发
