@@ -149,8 +149,8 @@ Content/
 
 ### 联系方式
 
-OneCuriousLearner - [j15112850518@163.com](mailto:j15112850518@163.com)
-项目链接: [https://github.com/OneCuriousLearner/YourPrjkt](https://github.com/OneCuriousLearner/YourPrjkt)
+* OneCuriousLearner - [j15112850518@163.com](mailto:j15112850518@163.com)
+* 项目链接: [https://github.com/OneCuriousLearner/YourPrjkt](https://github.com/OneCuriousLearner/YourPrjkt)
 
 ### 致谢
 
