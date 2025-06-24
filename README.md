@@ -2,11 +2,11 @@
 
 ![Project Banner](HeadImage.jpg)
 
-一个融合了 GAS (Gameplay Ability System) 的简易动作游戏 DEMO，由 Unreal Engine 5.4 开发。
+一个融合了 GAS 的简易动作游戏 DEMO，由 Unreal Engine 5.4 开发。
 
 ## 关于项目
 
-`YourPrjkt` 是一个旨在学习和演示如何在 Unreal Engine 中使用 Game Animation Sample (GAS) 来创建简单角色技能和属性系统的动作游戏原型，由[我](https://github.com/OneCuriousLearner)开发。
+`YourPrjkt` 是一个旨在学习和演示如何在 Unreal Engine 中使用 Game Animation Sample (GAS) 来创建简单角色技能和属性系统的动作游戏原型，由 [我](https://github.com/OneCuriousLearner) 开发。
 
 这个项目主要包含以下内容：
 
@@ -35,27 +35,31 @@
 
 请确保您已安装以下软件：
 
-* **Unreal Engine 5.4:** [下载虚幻引擎 - Unreal Engine](https://www.unrealengine.com/zh-CN/download)
-* **Visual Studio 2022:** [Visual Studio 2022 IDE - 适用于软件开发人员的编程工具](https://visualstudio.microsoft.com/zh-hans/vs/)
-  * 请确保安装了 "Game development with C++" 工作负载。
-* **Git LFS:** [下载与安装指南](https://git-lfs.github.com/)
+* **Unreal Engine 5.4**：[下载虚幻引擎 - Unreal Engine](https://www.unrealengine.com/zh-CN/download)
+* **Visual Studio 2022**：[Visual Studio 2022 IDE - 适用于软件开发人员的编程工具](https://visualstudio.microsoft.com/zh-hans/vs/)
+  * 请确保安装了 [需要的工作负载](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine?application_version=5.4)。
+* **Git LFS**：[下载与安装指南](https://git-lfs.github.com/)
   * 本项目包含一些较大的资源文件，建议使用 Git LFS 进行管理。
 
 ### 安装步骤
 
-1. **克隆仓库**
+1. **克隆仓库**（需要先进入你的开发目录）
 
     ```sh
     git clone https://github.com/OneCuriousLearner/YourPrjkt.git
     cd YourPrjkt
     ```
 
-2. **设置 Git LFS**
+    * 或者可以进入 [项目主页](https://github.com/OneCuriousLearner/YourPrjkt)，点击 `<> Code` - `Download ZIP` 下载压缩包。
+
+2. **设置 Git LFS**（用于跟踪大文件）
 
     ```sh
     git lfs install
     git lfs pull
     ```
+
+    * 需要拥有 `GitHub Pro` 或 `GitHub Education Benefits` 等权益，以保证足够的LFS流量额度。
 
 3. **生成 Visual Studio 项目文件**
 
@@ -73,7 +77,6 @@
 
 ## 使用方法
 
-<!-- 描述如何玩您的游戏或使用您的项目 -->
 **游戏操作:**
 
 * **移动:** W, A, S, D
@@ -86,7 +89,7 @@
 
 ## 项目结构
 
-为了保持项目的整洁和可维护性，我们遵循了一套目录结构规范。以下是 `Content` 目录下的主要文件夹及其用途：
+为了保持项目的整洁和可维护性，我遵循了一套目录结构规范。以下是 `Content` 目录下的主要文件夹及其用途：
 
 ```text
 Content/
@@ -137,6 +140,8 @@ Content/
 4. Push 到您的分支 (`git push origin feature/AmazingFeature`)
 5. 提交一个 Pull Request
 
+或者使用 [GitHub Desktop](https://desktop.github.com/download/) 进行 [分支管理](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine?application_version=5.4)【推荐】。
+
 ---
 
 ## 许可证
@@ -150,7 +155,7 @@ Content/
 ### 联系方式
 
 * OneCuriousLearner - [j15112850518@163.com](mailto:j15112850518@163.com)
-* 项目链接: [https://github.com/OneCuriousLearner/YourPrjkt](https://github.com/OneCuriousLearner/YourPrjkt)
+* 项目链接：[https://github.com/OneCuriousLearner/YourPrjkt](https://github.com/OneCuriousLearner/YourPrjkt)
 
 ### 致谢
 
