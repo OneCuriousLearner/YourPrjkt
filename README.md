@@ -160,4 +160,10 @@ Content/
 ### 致谢
 
 * [最强大的实时3D创作工具 - Unreal Engine](https://www.unrealengine.com/zh-CN)
-* [原子之音个人主页-哔哩哔哩视频](https://space.bilibili.com/437860379)
+* [原子之音-哔哩哔哩](https://b23.tv/93nSsA1)
+
+* [给你柠檬椰果养乐多你会跟我玩吗-哔哩哔哩](https://b23.tv/QYARVTX)
+
+* [栗川彼方-哔哩哔哩](https://b23.tv/z0CKGOn)
+
+* [爱格蛋总-哔哩哔哩](https://b23.tv/SPfrY41)
