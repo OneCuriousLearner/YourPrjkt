@@ -1,57 +1,62 @@
 {
-	"FileVersion": 3,
-	"EngineAssociation": "5.4",
-	"Category": "",
-	"Description": "",
-	"Modules": [
-		{
-			"Name": "YourPrjkt",
-			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine"
-			]
-		}
-	],
-	"Plugins": [
-		{
-			"Name": "ModelingToolsEditorMode",
-			"Enabled": true,
-			"TargetAllowList": [
-				"Editor"
-			]
-		},
-		{
-			"Name": "VRM4U",
-			"Enabled": true
-		},
-		{
-			"Name": "PoseSearch",
-			"Enabled": true
-		},
-		{
-			"Name": "MotionTrajectory",
-			"Enabled": true
-		},
-		{
-			"Name": "MotionWarping",
-			"Enabled": true
-		},
-		{
-			"Name": "AnimationWarping",
-			"Enabled": true
-		},
-		{
-			"Name": "Chooser",
-			"Enabled": true
-		},
-		{
-			"Name": "AnimationLocomotionLibrary",
-			"Enabled": true
-		},
-		{
-			"Name": "DeformerGraph",
-			"Enabled": true
-		}
-	]
+  "FileVersion": 3,
+  "EngineAssociation": "5.4",
+  "Category": "",
+  "Description": "",
+  "Modules": [
+    {
+      "Name": "YourPrjkt",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ],
+  "Plugins": [
+    {
+      "Name": "ModelingToolsEditorMode",
+      "Enabled": true
+    },
+    {
+      "Name": "VRM4U",
+      "Enabled": true
+    },
+    {
+      "Name": "PoseSearch",
+      "Enabled": true
+    },
+    {
+      "Name": "MotionTrajectory",
+      "Enabled": true
+    },
+    {
+      "Name": "MotionWarping",
+      "Enabled": true
+    },
+    {
+      "Name": "AnimationWarping",
+      "Enabled": true
+    },
+    {
+      "Name": "Chooser",
+      "Enabled": true
+    },
+    {
+      "Name": "AnimationLocomotionLibrary",
+      "Enabled": true
+    },
+    {
+      "Name": "DeformerGraph",
+      "Enabled": true
+    },
+    {
+      "Name": "VisualStudioTools",
+      "Enabled": true,
+      "SupportedTargetPlatforms": [
+        "Win64"
+      ]
+    }
+  ],
+  "TargetPlatforms": [],
+  "AdditionalRootDirectories": [],
+  "AdditionalPluginDirectories": [],
+  "EpicSampleNameHash": ""
 }
