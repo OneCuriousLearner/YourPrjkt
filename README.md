@@ -2,11 +2,17 @@
 
 ![Project Banner](HeadImage.jpg)
 
-一个融合了 GAS 的简易动作游戏 DEMO，由 Unreal Engine 5.4 开发。
+一个融合了 GAS 的简易动作游戏 DEMO，由 Unreal Engine 5.4 开发。项目的名字是随便取的，游戏名字暂定为《潮蚀》（Tide Eater）。
+
+## 声明
+
+本项目仅用于学习和研究目的，不涉及任何商业用途，所有资源和代码均为学习和研究之用。
+本项目不提供任何形式的付费支持或保证，也不对因使用本项目而导致的任何损失或损害承担责任。
+本项目内所有音乐资产和内容均归原作者所有。如有侵权，请联系我进行删除。
 
 ## 关于项目
 
-`YourPrjkt` 是一个旨在学习和演示如何在 Unreal Engine 中使用 Game Animation Sample (GAS) 来创建简单角色技能和属性系统的动作游戏原型，由 [我](https://github.com/OneCuriousLearner) 开发。
+`YourPrjkt` 是一个旨在学习和演示如何在 Unreal Engine 中使用 Game Animation Sample (GAS) 来创建简单角色技能和属性系统的动作游戏原型，由[我](https://github.com/OneCuriousLearner)开发。
 
 这个项目主要包含以下内容：
 
@@ -14,10 +20,8 @@
 * 角色状态管理，使用 GAS 来定义和触发技能。
 * 使用 UMG 在适当时机显示当前生命值、体力值。
 * 简单的敌人 AI，用于控制敌人的行为。（开发中）
-* 简短的剧情，便于了解世界观。（开发中）
+* 简短的剧情，便于玩家了解世界观。（请参阅文档`潮蚀 - 文案.md`）
 * To Be Continued...
-
-项目的名字没有任何特殊意义，只是为了方便起见。
 
 **主要技术栈:**
 
@@ -28,6 +32,19 @@
 * User Interface Blueprints (UMG)
 * To Be Continued...
 
+### 游戏类型
+
+这个游戏是一个​**​动作冒险游戏​**​，融合了​**​心理恐怖​**​和​**​叙事驱动​**​的元素。
+具体来说，采用了动作游戏的核心机制（如战斗、移动），但通过探索、日记收集和环境叙事来营造悬疑和恐怖氛围，类似于心理惊悚类游戏。
+
+### 游戏特点
+
+1. ​**​动作战斗为核心​**​：游戏基于Unreal Engine 5.4开发，使用GAS实现角色技能，并拥有属性管理（生命值、体力值），强调实时战斗。
+2. ​**​叙事驱动与恐怖氛围​**​：玩家在神秘岛屿上探索，逐步解锁日记和信件，揭示失忆主角的故事，涉及海洋祭祀、怪物和轮回主题；通过音乐设计和时间变化强化心理恐怖感。
+3. ​**​探索与进度系统​**​：自由探索地图可解锁日记、提升属性并获得武器，通过环境线索推进剧情，最终以过场动画结束游戏。
+
+总而言之，这是一个以动作为基础、恐怖叙事为导向的冒险游戏DEMO，强调氛围营造和玩家探索，同时利用先进引擎技术实现沉浸式体验。
+
 ---
 
 ## 开始使用
@@ -36,11 +53,15 @@
 
 ### 先决条件
 
-请确保您已安装以下软件：
+请确保为磁盘预留了足够的空间，详细情况请见下文。
+请确保您已安装以下内容：
 
-* **Unreal Engine 5.4**：[下载虚幻引擎 - Unreal Engine](https://www.unrealengine.com/zh-CN/download)
+* **Unreal Engine 5.4**：
+  * 预编译版本（不推荐）：[下载虚幻引擎 - Unreal Engine](https://www.unrealengine.com/zh-CN/download)（约 65 GB，需勾选“输入调试用符号”）
+  * 源代码版本（推荐）：[Release Unreal Engine 5.4.4 · EpicGames/UnrealEngine](https://github.com/EpicGames/UnrealEngine/releases/tag/5.4.4-release)（约 200 GB）
 * **Visual Studio 2022**：[Visual Studio 2022 IDE - 适用于软件开发人员的编程工具](https://visualstudio.microsoft.com/zh-hans/vs/)
-  * 请确保安装了 [需要的工作负载](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine?application_version=5.4)。
+  * 请确保安装了 [需要的工作负载](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine?application_version=5.4)
+  * 需要的存储空间：系统盘至少 20 GB，其他盘至少 30 GB。
 * **Git LFS**：[下载与安装指南](https://git-lfs.github.com/)
   * 本项目包含一些较大的资源文件，建议使用 Git LFS 进行管理。
 
@@ -165,6 +186,7 @@ Content/
 ### 致谢
 
 * [最强大的实时3D创作工具 - Unreal Engine](https://www.unrealengine.com/zh-CN)
+
 * [原子之音-哔哩哔哩](https://b23.tv/93nSsA1)
 
 * [给你柠檬椰果养乐多你会跟我玩吗-哔哩哔哩](https://b23.tv/QYARVTX)

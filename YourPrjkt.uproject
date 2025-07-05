@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.4",
+	"EngineAssociation": "{9374636C-47BE-0627-8727-A28C7B33543F}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -46,14 +46,10 @@
 		{
 			"Name": "DeformerGraph",
 			"Enabled": true
-		},
-		{
-			"Name": "VisualStudioTools",
-			"Enabled": true,
-			"SupportedTargetPlatforms": [
-				"Win64"
-			],
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/362651520df94e4fa65492dbcba44ae2"
 		}
-	]
+	],
+	"TargetPlatforms": [],
+	"AdditionalRootDirectories": [],
+	"AdditionalPluginDirectories": [],
+	"EpicSampleNameHash": ""
 }
