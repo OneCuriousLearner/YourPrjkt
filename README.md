@@ -2,7 +2,7 @@
 
 ![Project Banner](HeadImage.jpg)
 
-一个融合了 GAS 的简易动作游戏 DEMO，由 Unreal Engine 5.4 开发。项目的名字是随便取的，游戏名字暂定为《潮蚀》（Tide Eater）。
+一个融合了 GAS 的简易动作游戏 DEMO，由 Unreal Engine 5.4 开发。项目的名字是随便取的，游戏名字暂定为《潮蚀》（*Tide Eater*）。
 
 ## 声明
 
