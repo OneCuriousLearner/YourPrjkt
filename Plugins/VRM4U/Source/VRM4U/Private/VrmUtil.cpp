@@ -541,40 +541,7 @@ const TArray<FName> VRMUtil::ue4_humanoid_bone_list_name = {
 	"Custom_5",
 };
 
-#if	UE_VERSION_OLDER_THAN(5,0,0)
-
-#elif UE_VERSION_OLDER_THAN(5,2,0)
-
-#include "IKRigDefinition.h"
-#include "IKRigSolver.h"
-#if WITH_EDITOR
-#include "RigEditor/IKRigController.h"
-#include "RetargetEditor/IKRetargeterController.h"
-#include "Retargeter/IKRetargeter.h"
-#include "Solvers/IKRig_PBIKSolver.h"
-#endif
-
-#elif UE_VERSION_OLDER_THAN(5,3,0)
-
-#include "IKRigDefinition.h"
-#include "IKRigSolver.h"
-#if WITH_EDITOR
-#include "RigEditor/IKRigController.h"
-#include "RetargetEditor/IKRetargeterController.h"
-#include "Retargeter/IKRetargeter.h"
-#endif
-
-#else
-
-#include "Rig/IKRigDefinition.h"
-#include "Rig/Solvers/IKRigSolver.h"
-#if WITH_EDITOR
-#include "RigEditor/IKRigController.h"
-#include "RetargetEditor/IKRetargeterController.h"
-#include "Retargeter/IKRetargeter.h"
-#endif
-
-#endif
+#include "VrmRigHeader.h"
 
 
 #if	UE_VERSION_OLDER_THAN(5,0,0)
@@ -995,6 +962,7 @@ void VRMUtil::CloseEditorWindowByFolderPath(const UObject* Asset){
 	if (IsValid(Asset) == false) {
 		return;
 	}
+	if (GEditor == nullptr) return;
 
 	FString AssetPath = Asset->GetPathName();
 	FString FolderPath = FPackageName::GetLongPackagePath(AssetPath);
@@ -1021,4 +989,29 @@ void VRMUtil::CloseEditorWindowByFolderPath(const UObject* Asset){
 	}
 #endif
 #endif
+}
+
+int VRMUtil::GetChildBone(const USkeleton* skeleton, const int32 ParentBoneIndex, bool recursive, TArray<int32>& Children) {
+
+	Children.Reset();
+	auto& r = skeleton->GetReferenceSkeleton();
+
+	const int32 NumBones = r.GetRawBoneNum();
+	for (int32 ChildIndex = ParentBoneIndex + 1; ChildIndex < NumBones; ChildIndex++)
+	{
+		if (ParentBoneIndex == r.GetParentIndex(ChildIndex))
+		{
+			Children.Add(ChildIndex);
+		}
+	}
+	if (recursive) {
+		TArray<int32> c2;
+		for (auto i : Children) {
+			TArray<int32> c;
+			GetChildBone(skeleton, i, true, c);
+			c2.Append(c);
+		}
+		Children.Append(c2);
+	}
+	return Children.Num();
 }
