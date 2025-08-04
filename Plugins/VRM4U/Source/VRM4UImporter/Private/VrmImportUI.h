@@ -70,6 +70,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, AdvancedDisplay, Category = Mesh, meta = (ImportType = "StaticMesh|SkeletalMesh", DisplayName = "Remove RootBone Rotation"))
 	bool bRemoveRootBoneRotation = true;
 
+	/** Remove RootBone Position */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, AdvancedDisplay, Category = Mesh, meta = (ImportType = "StaticMesh|SkeletalMesh", DisplayName = "Remove RootBone Position"))
+	bool bRemoveRootBonePosition = false;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, AdvancedDisplay, Category = Mesh, meta = (ImportType = "StaticMesh|SkeletalMesh", DisplayName = "VRM10 Convert to Restpose from Bindpose"))
 	bool bVrm10UseBindToRestPose = true;
 
@@ -100,6 +104,10 @@ public:
 	/** Remove Physics asset */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, AdvancedDisplay, Category = Mesh, meta = (ImportType = "StaticMesh|SkeletalMesh", DisplayName="No physics asset"))
 	bool bSkipPhysics = false;
+
+	/** Remove Retargeter asset */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, AdvancedDisplay, Category = Mesh, meta = (ImportType = "StaticMesh|SkeletalMesh", DisplayName = "No Retargeter asset"))
+	bool bSkipRetargeter = false;
 
 	/** Remove MorphTarget */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, AdvancedDisplay, Category = Mesh, meta = (ImportType = "StaticMesh|SkeletalMesh", DisplayName="No MorphTarget"))

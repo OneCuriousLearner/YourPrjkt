@@ -19,6 +19,8 @@
 #include "Kismet2/CompilerResultsLog.h"
 #include "Widgets/Layout/SUniformGridPanel.h"
 
+#include UE_INLINE_GENERATED_CPP_BY_NAME(AnimGraphNode_KawaiiPhysics)
+
 #define LOCTEXT_NAMESPACE "KawaiiPhysics"
 
 // ----------------------------------------------------------------------------
@@ -163,6 +165,10 @@ void UAnimGraphNode_KawaiiPhysics::CopyNodeDataToPreviewNode(FAnimNode_Base* Ani
 	KawaiiPhysics->bAutoAddChildDummyBoneConstraint = Node.bAutoAddChildDummyBoneConstraint;
 	KawaiiPhysics->BoneConstraints = Node.BoneConstraints;
 	KawaiiPhysics->BoneConstraintsDataAsset = Node.BoneConstraintsDataAsset;
+
+	// SimulationSpace
+	KawaiiPhysics->SimulationSpace = Node.SimulationSpace;
+	KawaiiPhysics->SimulationBaseBone = Node.SimulationBaseBone;
 
 	// Reset for sync without compile
 	KawaiiPhysics->ModifyBones.Empty();
@@ -508,16 +514,6 @@ void UAnimGraphNode_KawaiiPhysics::Serialize(FArchive& Ar)
 	Super::Serialize(Ar);
 
 	Ar.UsingCustomVersion(FKawaiiPhysicsVersion::GUID);
-
-	if (Ar.CustomVer(FKawaiiPhysicsVersion::GUID) < FKawaiiPhysicsVersion::UseRuntimeFloatCurve)
-	{
-		Node.DampingCurveData.ExternalCurve = Node.DampingCurve_DEPRECATED;
-		Node.WorldDampingLocationCurveData.ExternalCurve = Node.WorldDampingLocationCurve_DEPRECATED;
-		Node.WorldDampingRotationCurveData.ExternalCurve = Node.WorldDampingRotationCurve_DEPRECATED;
-		Node.StiffnessCurveData.ExternalCurve = Node.StiffnessCurve_DEPRECATED;
-		Node.RadiusCurveData.ExternalCurve = Node.RadiusCurve_DEPRECATED;
-		Node.LimitAngleCurveData.ExternalCurve = Node.LimitAngleCurve_DEPRECATED;
-	}
 }
 
 void UAnimGraphNode_KawaiiPhysics::CreateExportDataAssetPath(FString& PackageName, const FString& DefaultSuffix) const
