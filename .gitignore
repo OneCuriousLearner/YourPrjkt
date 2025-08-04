@@ -1,8 +1,13 @@
+# IDEs
+.claude/
+.idea/
+.vscode/
+.cursor/
+.gemini/
+.codebuddy/
+
 # Visual Studio 2015 user specific files
 .vs/
-
-# CodeBuddy
-.codebuddy/
 
 # Compiled Object files
 *.slo

@@ -10,8 +10,6 @@
 #include "Editor.h"
 #endif
 
-#include UE_INLINE_GENERATED_CPP_BY_NAME(KawaiiPhysicsBoneConstraintsDataAsset)
-
 struct FBoneConstraintDataCustomVersion
 {
 	enum Type

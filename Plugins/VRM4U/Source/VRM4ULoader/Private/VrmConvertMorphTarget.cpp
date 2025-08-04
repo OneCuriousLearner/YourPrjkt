@@ -278,8 +278,6 @@ bool VRMConverter::ConvertMorphTarget(UVrmAssetListObject *vrmAssetList) {
 
 	TArray<FString> MorphNameList;
 	TArray<FString> MorphNameList_Strict;
-	TMap<FString, FString> MorphName_Orig_to_Name;
-
 	TArray<UMorphTarget*> MorphTargetList;
 
 	for (uint32_t m = 0; m < aiData->mNumMeshes; ++m) {
@@ -293,28 +291,24 @@ bool VRMConverter::ConvertMorphTarget(UVrmAssetListObject *vrmAssetList) {
 			FString morphNameOrg = morphName;
 			if (VRMConverter::Options::Get().IsForceOriginalMorphTargetName()) {
 			}else{
+				morphName = VRMUtil::MakeName(morphName);
+				//morphName = VRMConverter::NormalizeFileName(morphName);
 
-				auto mName = MorphName_Orig_to_Name.Find(morphNameOrg);
-				if (mName) {
-					continue;
-					//morphName = *mName;
-				} else {
-					morphName = VRMUtil::MakeName(morphName);
+				if (morphName != morphNameOrg) {
+					if (MorphNameList_Strict.Find(morphNameOrg) == INDEX_NONE) {
 
-					bool isInvalidName = VRMUtil::IsNoSafeName(morphName);
-
-					auto tmp = morphName;
-					int i = 0;
-					while (MorphNameList.Find(tmp) != INDEX_NONE || isInvalidName) {
-						++i;
-						isInvalidName = false;
-						tmp = TEXT("UE5EA_patch_") + morphName + TEXT("_") + FString::FromInt(i);
+						auto tmp = morphName;
+						int i = 0;
+						if (VRMUtil::IsNoSafeName(morphName)) {
+							tmp = TEXT("UE5EA_patch_") + morphName + TEXT("_") + FString::FromInt(i);
+						}
+						while (MorphNameList.Find(tmp) != INDEX_NONE) {
+							++i;
+							tmp = TEXT("UE5EA_patch_") + morphName + TEXT("_") + FString::FromInt(i);
+						}
+						morphName = tmp;
 					}
-					morphName = tmp;
-
-					MorphName_Orig_to_Name.Add(morphNameOrg, morphName);
 				}
-
 			}
 			if (morphName == TEXT("")) {
 				//morphName = FString::Printf("%d_%d", m, a);
@@ -322,11 +316,11 @@ bool VRMConverter::ConvertMorphTarget(UVrmAssetListObject *vrmAssetList) {
 
 
 			if (MorphNameList.Find(morphName) != INDEX_NONE) {
-//				continue;
+				continue;
 			}
 
-			MorphNameList.AddUnique(morphName);
-			MorphNameList_Strict.AddUnique(morphNameOrg);
+			MorphNameList.Add(morphName);
+			MorphNameList_Strict.Add(morphNameOrg);
 			if (readMorph2(MorphDeltas, aiA.mName, aiData, vrmAssetList) == false) {
 				continue;
 			}

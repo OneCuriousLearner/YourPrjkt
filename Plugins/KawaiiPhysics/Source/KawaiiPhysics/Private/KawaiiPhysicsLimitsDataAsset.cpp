@@ -5,8 +5,6 @@
 #include "AnimNode_KawaiiPhysics.h"
 #include "KawaiiPhysics.h"
 
-#include UE_INLINE_GENERATED_CPP_BY_NAME(KawaiiPhysicsLimitsDataAsset)
-
 DEFINE_LOG_CATEGORY(LogKawaiiPhysics);
 
 struct FCollisionLimitDataCustomVersion

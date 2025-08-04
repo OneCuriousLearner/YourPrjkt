@@ -97,7 +97,6 @@ public:
 		bool IsActiveBone() const;
 
 		bool IsSkipPhysics() const;
-		bool IsSkipRetargeter() const;
 
 		bool IsSkipNoMeshBone() const;
 
@@ -110,7 +109,6 @@ public:
 		bool IsRemoveBlendShapeGroupPrefix() const;
 
 		bool IsRemoveRootBoneRotation() const;
-		bool IsRemoveRootBonePosition() const;
 
 		bool IsVRM10RemoveLocalRotation() const;
 		bool IsVRM10BindToRestPose() const;

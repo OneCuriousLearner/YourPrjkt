@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "CoreMinimal.h"
 #include "AnimNodeEditMode.h"
 #include "AnimGraphNode_KawaiiPhysics.h"
 #include "AnimNode_KawaiiPhysics.h"

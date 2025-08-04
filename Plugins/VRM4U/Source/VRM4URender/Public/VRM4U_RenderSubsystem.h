@@ -58,7 +58,6 @@ enum EVRM4U_CaptureSource : int
 UCLASS()
 class VRM4URENDER_API UVRM4U_RenderSubsystem : public UEngineSubsystem
 {
-
 	GENERATED_BODY()
 
 	FDelegateHandle HandleTearDown;
@@ -66,8 +65,6 @@ class VRM4URENDER_API UVRM4U_RenderSubsystem : public UEngineSubsystem
 	bool bIsPlay = false;
 
 public:
-
-	bool bUsePostRenderBasePass = false;
 
 	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
 
@@ -100,8 +97,4 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "VRM4U")
 	void ResetSceneTextureExtentHistory();
-
-	//
-	UFUNCTION(BlueprintCallable, Category = "VRM4U")
-	void SetViewExtension(bool bEnable);
 };

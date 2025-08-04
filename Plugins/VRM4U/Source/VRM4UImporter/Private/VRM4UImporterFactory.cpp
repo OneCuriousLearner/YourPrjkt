@@ -209,7 +209,6 @@ UObject* UVRM4UImporterFactory::FactoryCreateBinary(UClass* InClass, UObject* In
 		// to default
 		{
 			ImportUI->bRemoveRootBoneRotation = true;
-			ImportUI->bRemoveRootBonePosition = false;
 			ImportUI->bVrm10RemoveLocalRotation = false;
 
 			ImportUI->ModelScale = 1.0f;
@@ -290,7 +289,7 @@ UObject* UVRM4UImporterFactory::FactoryCreateBinary(UClass* InClass, UObject* In
 #if	UE_VERSION_OLDER_THAN(5,0,0)
 #else
 			// for thumbnail update
-			if (GEditor){
+			{
 				auto* s = GEditor->GetEditorSubsystem<UAssetEditorSubsystem>();
 				if (s && ImportUI->Thumbnail) {
 					s->OpenEditorForAsset(ImportUI->Thumbnail);

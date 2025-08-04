@@ -18,8 +18,10 @@
 #include "AnimNode_VrmSpringBone.h"
 #include "AnimNode_VrmConstraint.h"
 #include "AnimNodes/AnimNode_RetargetPoseFromMesh.h"
-
-#include "VrmRigHeader.h"
+#if	UE_VERSION_OLDER_THAN(5,3,0)
+#else
+#include "Rig/Solvers/IKRigSolver.h"
+#endif
 
 #if	UE_VERSION_OLDER_THAN(5,4,0)
 #include "Animation/Rig.h"
@@ -30,7 +32,7 @@ namespace {
 	template<class BaseType, class PoseType>
 	static void ConvertToLocalPoses2(const BaseType &basePose, PoseType& OutPose)
 	{
-		checkSlow(basePose.GetPose().IsValid());
+		checkSlow(basePose.Pose.IsValid());
 		OutPose = basePose.GetPose();
 
 		// now we need to convert back to local bases

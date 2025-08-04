@@ -343,10 +343,6 @@ void VRMSkeleton::readVrmBone(aiScene* scene, int& boneOffset, FReferenceSkeleto
 						} else {
 							tpose_root = localpose;
 							localpose_Identity.SetIdentity();
-
-							if (VRMConverter::Options::Get().IsRemoveRootBonePosition() == false) {
-								localpose_Identity.SetTranslation(localpose.GetTranslation());
-							}
 						}
 					}// identity set
 
@@ -418,24 +414,11 @@ void VRMSkeleton::readVrmBone(aiScene* scene, int& boneOffset, FReferenceSkeleto
 			info.ExportName = UTF8_TO_TCHAR(node->mName.C_Str());
 #endif
 
-			int32 ParentIndexByNode = INDEX_NONE;
-			if (nodeArray.Find(node->mParent, ParentIndexByNode) == false) {
-				ParentIndexByNode = INDEX_NONE;
-
-				if (VRMConverter::Options::Get().IsBVHModel()) {
-					// ダミーのRoot骨を追加する。BVHはRoot骨にTransが入っていることがある。
-					// Transがあると、リターゲットがうまくできない
-					FMeshBoneInfo inf;
-					inf.Name = TEXT("root_dummy");
-					inf.ParentIndex = INDEX_NONE;
-					RefSkelModifier.Add(inf, FTransform());
-				}
+			int32 ParentIndex = INDEX_NONE;
+			if (nodeArray.Find(node->mParent, ParentIndex) == false) {
+				ParentIndex = INDEX_NONE;
 			}
-			if (VRMConverter::Options::Get().IsBVHModel()) {
-				info.ParentIndex = ParentIndexByNode + 1;
-			} else {
-				info.ParentIndex = ParentIndexByNode;
-			}
+			info.ParentIndex = ParentIndex;
 
 			FMatrix m = convertAiMatToFMatrix(node->mTransformation);
 
@@ -456,11 +439,11 @@ void VRMSkeleton::readVrmBone(aiScene* scene, int& boneOffset, FReferenceSkeleto
 							vrmAssetList->VrmMetaObject->humanoidBoneTable.GenerateValueArray(v);
 							//if (v.Find(info.Name.ToString()) != INDEX_NONE) {
 								pose.SetRotation(FQuat::Identity);
-								if (ParentIndexByNode >= 0) {
+								if (ParentIndex >= 0) {
 									if (VRMConverter::Options::Get().IsVRM10Bindpose()) {
-										pose.SetTranslation(poseGlobal_bindpose[nodeNo].GetLocation() - poseGlobal_bindpose[ParentIndexByNode].GetLocation());
+										pose.SetTranslation(poseGlobal_bindpose[nodeNo].GetLocation() - poseGlobal_bindpose[ParentIndex].GetLocation());
 									} else {
-										pose.SetTranslation(poseGlobal_tpose[nodeNo].GetLocation() - poseGlobal_tpose[ParentIndexByNode].GetLocation());
+										pose.SetTranslation(poseGlobal_tpose[nodeNo].GetLocation() - poseGlobal_tpose[ParentIndex].GetLocation());
 									}
 								}
 							//}
@@ -480,7 +463,7 @@ void VRMSkeleton::readVrmBone(aiScene* scene, int& boneOffset, FReferenceSkeleto
 					info.Name = *FString::Printf(TEXT("%s_vrm4u%02d"), *baseName, c);
 				}
 			}
-			if (totalBoneCount > 0 && ParentIndexByNode == INDEX_NONE) {
+			if (totalBoneCount > 0 && ParentIndex == INDEX_NONE) {
 				// bad bone. root?
 				continue;
 			}

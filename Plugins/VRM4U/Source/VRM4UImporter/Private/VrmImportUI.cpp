@@ -33,8 +33,6 @@ const FImportOptionData* UVrmImportUI::GenerateOptionData() {
 
 	c(bRemoveRootBoneRotation);
 
-	c(bRemoveRootBonePosition);
-
 	c(bVrm10RemoveLocalRotation);
 
 	c(bVrm10UseBindToRestPose);
@@ -50,8 +48,6 @@ const FImportOptionData* UVrmImportUI::GenerateOptionData() {
 	c(bGenerateRigIK);
 
 	c(bSkipPhysics);
-
-	c(bSkipRetargeter);
 
 	c(bSkipMorphTarget);
 
