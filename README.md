@@ -12,24 +12,26 @@
 
 ## 关于项目
 
-`YourPrjkt` 是一个旨在学习和演示如何在 Unreal Engine 中使用 Game Animation Sample (GAS) 来创建简单角色技能和属性系统的动作游戏原型，由[我](https://github.com/OneCuriousLearner)开发。
+`YourPrjkt` 是一个旨在学习和演示如何在 Unreal Engine 中使用 Motion Matching (Game Animation Sample Project) 来创建简单角色技能和属性系统的动作游戏原型，由 [我](https://github.com/OneCuriousLearner) 开发。
 
 这个项目主要包含以下内容：
 
-* 一个基础的战斗系统，包括角色移动、跳跃、攻击等基本动作。
-* 角色状态管理，使用 GAS 来定义和触发技能。
+* 基于Motion Matching开发的的战斗系统，包括角色移动、跳跃、攻击等基本动作。（开发中）
 * 使用 UMG 在适当时机显示当前生命值、体力值。
 * 简单的敌人 AI，用于控制敌人的行为。（开发中）
-* 简短的剧情，便于玩家了解世界观。（请参阅文档`潮蚀 - 文案.md`）
+* 简短的剧情，便于玩家了解世界观。（请参阅文档 `潮蚀 - 文案.md`）
 * To Be Continued...
 
 **主要技术栈:**
 
 * Unreal Engine 5.4
-* C++
-* Game Animation Sample (GAS)
-* Enhanced Input System
+* Blueprint, C++
+* Motion Matching (Game Animation Sample Project)
+* Enhanced Input System（增强输入系统）
 * User Interface Blueprints (UMG)
+* Combat System（战斗系统）
+* Animation Montage（动画蒙太奇）
+* Lens Language（镜头语言）
 * To Be Continued...
 
 ### 游戏类型
@@ -182,15 +184,14 @@ Content/
 
 * OneCuriousLearner - [j15112850518@163.com](mailto:j15112850518@163.com)
 * 项目链接：[https://github.com/OneCuriousLearner/YourPrjkt](https://github.com/OneCuriousLearner/YourPrjkt)
+* DeepWiki 文档 - [MCP_Agent:RE 系统概览 Wiki](https://github.com/OneCuriousLearner/YourPrjkt/wiki)
 
 ### 致谢
 
 * [最强大的实时3D创作工具 - Unreal Engine](https://www.unrealengine.com/zh-CN)
-
 * [原子之音-哔哩哔哩](https://b23.tv/93nSsA1)
-
 * [给你柠檬椰果养乐多你会跟我玩吗-哔哩哔哩](https://b23.tv/QYARVTX)
-
 * [栗川彼方-哔哩哔哩](https://b23.tv/z0CKGOn)
-
 * [爱格蛋总-哔哩哔哩](https://b23.tv/SPfrY41)
+
+这部分内容难以一一列出，详情请参阅文档 `特别鸣谢.md`
