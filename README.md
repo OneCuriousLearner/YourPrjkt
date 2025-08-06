@@ -6,10 +6,10 @@
 
 ## 声明
 
-本项目仅用于学习和研究目的，不涉及任何商业用途，所有资源和代码均为学习和研究之用。
-本项目不提供任何形式的付费支持或保证，也不对因使用本项目而导致的任何损失或损害承担责任。
-本项目内所有音乐资产和内容均归原作者所有。如有侵权，请联系我进行删除。
-本项目的动作资产 [Cool Sword Combat Animations V3](https://www.fab.com/zh-cn/listings/080e42da-cef1-4a94-b406-4711aceb6031) 并非免费资产，建议自行购买以规避可能的版权问题。
+* 本项目仅用于学习和研究目的，不涉及任何商业用途，所有资源和代码均为学习和研究之用。
+* 本项目不提供任何形式的付费支持或保证，也不对因使用本项目而导致的任何损失或损害承担责任。
+* 本项目内所有音乐资产和内容均归原作者所有。如有侵权，请联系我进行删除。
+* 本项目的动作资产 [Cool Sword Combat Animations V3](https://www.fab.com/zh-cn/listings/080e42da-cef1-4a94-b406-4711aceb6031) 并非免费资产，建议自行购买以规避可能的版权问题。
 
 ## 关于项目
 
@@ -62,6 +62,7 @@
 * **Unreal Engine 5.4**：
   * 预编译版本（不推荐）：[下载虚幻引擎 - Unreal Engine](https://www.unrealengine.com/zh-CN/download)（约 65 GB，需勾选“输入调试用符号”）
   * 源代码版本（推荐）：[Release Unreal Engine 5.4.4 · EpicGames/UnrealEngine](https://github.com/EpicGames/UnrealEngine/releases/tag/5.4.4-release)（约 200 GB）
+    * 若无法访问源代码链接，请参阅此手册：[Downloading Source Code in Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/downloading-source-code-in-unreal-engine?application_version=5.4)
 * **Visual Studio 2022**：[Visual Studio 2022 IDE - 适用于软件开发人员的编程工具](https://visualstudio.microsoft.com/zh-hans/vs/)
   * 请确保安装了 [需要的工作负载](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine?application_version=5.4)
   * 需要的存储空间：系统盘至少 20 GB，其他盘至少 30 GB。
@@ -77,7 +78,7 @@
     cd YourPrjkt
     ```
 
-    * 或者可以进入 [项目主页](https://github.com/OneCuriousLearner/YourPrjkt)，点击 `<> Code` - `Download ZIP` 下载压缩包。
+    * 或者可以进入 [项目主页](https://github.com/OneCuriousLearner/YourPrjkt)，点击 `<> Code` - `Download ZIP` 下载压缩包（不建议，下载的资产可能被错误压缩）。
 
 2. **设置 Git LFS**（用于跟踪大文件）
 
@@ -126,34 +127,28 @@ Content/
 │  ├─Action/                        # 交互资产
 │  ├─AI/                            # AI 资产
 │  ├─Animation/                     # 动作资产
-│  │  ├─RamsterZ/                   # RamsterZ 动作资产
-│  │  └─SwordAnim/                  # Sword Animation 动作资产
 │  ├─Blueprint/                     # 蓝图资产
-│  │  ├─Character/                  # 角色蓝图
-│  │  ├─Component/                  # 组件蓝图
-│  │  ├─InteractiveObject/          # 交互物品
-│  │  └─Notify/                     # 通知蓝图
 │  ├─Level/                         # 关卡
-│  │  └─Test/                       # 测试关卡
 │  ├─Material/                      # 材质
 │  ├─Mesh/                          # 骨骼网格体（此文件夹已弃用）
 │  ├─MMD/                           # MMD 资产文件夹
-│  │  └─Characters/                 # MMD 角色
 │  ├─Music/                         # 音乐
-│  │  └─BackgroundMusic/            # 背景音乐
 │  └─UI/                            # UI 资产
 ├─Audio/                            # 音频资源
 ├─Blueprints/                       # 蓝图资源
-├─Cabin_Lake/                       # Cabin Lake 地图资产
+├─Cabin_Lake/                       # Cabin Lake 地图资产（来自 FAB 的免费资产）
 ├─Characters/                       # UE 小白人
 │  ├─Mannequins/                    # UE5 小白人
 │  ├─Mannequin_UE4/                 # UE4 小白人
 │  └─UEFN_Mannequin/                # GAS 小黄人
+├─CoolSwordCombatAnimsV3/           # 单手剑动画包（建议自行购买）
 ├─Input/                            # 输入资源
 ├─LevelPrototyping/                 # GAS 关卡资产
-├─RamsterZ_FreeAnims_Volume1/       # RamsterZ 动作资产
+├─RamsterZ_FreeAnims_Volume1/       # RamsterZ 动作资产（来自 FAB 的免费资产）
 ├─StarterContent/                   # 初学者内容包
-├─Sword_Animation/                  # Sword Animation 动作资产
+├─Sword_Animation/                  # Sword Animation 动作资产（来自 FAB 的免费资产）
+├─ThirdPerson/                      # 默认第三人称项目内容
+├─Weapon_Pack/                      # 武器资产包（来自 FAB 的免费资产）
 └── ...
 ```
 
@@ -190,9 +185,12 @@ Content/
 ### 致谢
 
 * [最强大的实时3D创作工具 - Unreal Engine](https://www.unrealengine.com/zh-CN)
-* [原子之音-哔哩哔哩](https://b23.tv/93nSsA1)
-* [给你柠檬椰果养乐多你会跟我玩吗-哔哩哔哩](https://b23.tv/QYARVTX)
-* [栗川彼方-哔哩哔哩](https://b23.tv/z0CKGOn)
-* [爱格蛋总-哔哩哔哩](https://b23.tv/SPfrY41)
+* [原子之音 - 哔哩哔哩](https://b23.tv/93nSsA1)
+* [给你柠檬椰果养乐多你会跟我玩吗 - 哔哩哔哩](https://b23.tv/QYARVTX)
+* [栗川彼方 - 哔哩哔哩](https://b23.tv/z0CKGOn)
+* [爱格蛋总 - 哔哩哔哩](https://b23.tv/SPfrY41)
+* [Clydiie - YouTube](https://www.youtube.com/@Clydiie)
+* [Jonatan Isaksson - YouTube](https://www.youtube.com/@JonatanIsaksson/videos)
+* [Zero2GameDev - YouTube](https://www.youtube.com/@Zero2GameDev0/videos)
 
 这部分内容难以一一列出，详情请参阅文档 `特别鸣谢.md`
