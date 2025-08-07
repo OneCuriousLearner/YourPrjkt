@@ -185,6 +185,8 @@ Content/
 ### 致谢
 
 * [最强大的实时3D创作工具 - Unreal Engine](https://www.unrealengine.com/zh-CN)
+* [pafuhana1213 / KawaiiPhysics](https://github.com/pafuhana1213/KawaiiPhysics)
+* [ruyo / VRM4U](https://github.com/ruyo/VRM4U)
 * [原子之音 - 哔哩哔哩](https://b23.tv/93nSsA1)
 * [给你柠檬椰果养乐多你会跟我玩吗 - 哔哩哔哩](https://b23.tv/QYARVTX)
 * [栗川彼方 - 哔哩哔哩](https://b23.tv/z0CKGOn)
