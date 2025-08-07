@@ -10,7 +10,7 @@
 	"DocsURL": "https://github.com/ruyo/VRM4U",
 	"MarketplaceURL": "",
 	"SupportURL": "https://github.com/ruyo/VRM4U",
-	"EngineVersion": "5.4.0",
+	"EngineVersion": "5.5.0",
 	"CanContainContent": true,
 	"Installed": true,
 	"Modules": [

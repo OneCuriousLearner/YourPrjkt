@@ -4,6 +4,8 @@
 
 一个融合了 GAS 的简易动作游戏 DEMO，由 Unreal Engine 5.4 开发。项目的名字是随便取的，游戏名字暂定为《潮蚀》（*Tide Eater*）。
 
+**项目已于 2025/08/07 将引擎版本升级至 5.5.4**，因此下文中关于引擎版本的描述可能不完全正确。
+
 ## 声明
 
 * 本项目仅用于学习和研究目的，不涉及任何商业用途，所有资源和代码均为学习和研究之用。
@@ -20,7 +22,7 @@
 * 基于Motion Matching开发的的战斗系统，包括角色移动、跳跃、攻击等基本动作。（开发中）
 * 使用 UMG 在适当时机显示当前生命值、体力值。
 * 简单的敌人 AI，用于控制敌人的行为。（开发中）
-* 简短的剧情，便于玩家了解世界观。（请参阅文档 `潮蚀 - 文案.md`）
+* 简短的剧情，便于玩家了解世界观。（请参阅文档 `Documents/潮蚀 - 文案.md`）
 * To Be Continued...
 
 **主要技术栈:**
@@ -195,4 +197,4 @@ Content/
 * [Jonatan Isaksson - YouTube](https://www.youtube.com/@JonatanIsaksson/videos)
 * [Zero2GameDev - YouTube](https://www.youtube.com/@Zero2GameDev0/videos)
 
-这部分内容难以一一列出，详情请参阅文档 `特别鸣谢.md`
+这部分内容难以一一列出，详情请参阅文档 `Documents/特别鸣谢.md`
