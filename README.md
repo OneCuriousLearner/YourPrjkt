@@ -9,7 +9,7 @@
 * 本项目仅用于学习和研究目的，不涉及任何商业用途，所有资源和代码均为学习和研究之用。
 * 本项目不提供任何形式的付费支持或保证，也不对因使用本项目而导致的任何损失或损害承担责任。
 * 本项目内所有音乐资产和内容均归原作者所有。如有侵权，请联系我进行删除。
-* 本项目的动作资产 [Cool Sword Combat Animations V3](https://www.fab.com/zh-cn/listings/080e42da-cef1-4a94-b406-4711aceb6031) 并非免费资产，建议自行购买以规避可能的版权问题。
+* 本项目的动作资产 [Cool Sword Combat Animations V3](https://www.fab.com/zh-cn/listings/080e42da-cef1-4a94-b406-4711aceb6031) 与场景资产 [Pirate Stilt Village Island Modular Pack](https://www.fab.com/zh-cn/listings/c267d4e2-deb0-46cf-a36f-7ac66e7758a2) 并非免费资产，建议自行购买以规避可能的版权问题。
 
 ## 关于项目
 
@@ -136,7 +136,7 @@ Content/
 │  └─UI/                            # UI 资产
 ├─Audio/                            # 音频资源
 ├─Blueprints/                       # 蓝图资源
-├─Cabin_Lake/                       # Cabin Lake 地图资产（来自 FAB 的免费资产）
+├─Cabin_Lake/                       # Cabin Lake 地图资产（建议自行购买）
 ├─Characters/                       # UE 小白人
 │  ├─Mannequins/                    # UE5 小白人
 │  ├─Mannequin_UE4/                 # UE4 小白人
