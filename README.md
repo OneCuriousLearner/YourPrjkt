@@ -2,7 +2,7 @@
 
 ![Project Banner](HeadImage.jpg)
 
-一个融合了 GAS 的简易动作游戏 DEMO，由 Unreal Engine 5.4 开发。项目的名字是随便取的，游戏名字暂定为《潮蚀》（*Tide Eater*）。
+一个融合了 Motion Matching 的简易动作游戏 DEMO，由 Unreal Engine 5.4 开发。项目的名字是随便取的，游戏名字暂定为《潮蚀》（*Tide Eater*）。
 
 **项目已于 2025/08/07 将引擎版本升级至 5.5.4**，因此下文中关于引擎版本的描述可能不完全正确。
 
@@ -27,14 +27,14 @@
 
 **主要技术栈:**
 
-* Unreal Engine 5.4
+* Unreal Engine 5.4 / 5.5
 * Blueprint, C++
 * Motion Matching (Game Animation Sample Project)
 * Enhanced Input System（增强输入系统）
 * User Interface Blueprints (UMG)
 * Combat System（战斗系统）
 * Animation Montage（动画蒙太奇）
-* Lens Language（镜头语言）
+* 资产迁移与引擎升级
 * To Be Continued...
 
 ### 游戏类型
@@ -44,11 +44,11 @@
 
 ### 游戏特点
 
-1. ​**​动作战斗为核心​**​：游戏基于Unreal Engine 5.4开发，使用GAS实现角色技能，并拥有属性管理（生命值、体力值），强调实时战斗。
+1. ​**​动作战斗为核心​**​：游戏基于 Unreal Engine 5.4 (5.5) 开发，使用 GAS 实现角色技能，并拥有属性管理（生命值、体力值），强调实时战斗。
 2. ​**​叙事驱动与恐怖氛围​**​：玩家在神秘岛屿上探索，逐步解锁日记和信件，揭示失忆主角的故事，涉及海洋祭祀、怪物和轮回主题；通过音乐设计和时间变化强化心理恐怖感。
 3. ​**​探索与进度系统​**​：自由探索地图可解锁日记、提升属性并获得武器，通过环境线索推进剧情，最终以过场动画结束游戏。
 
-总而言之，这是一个以动作为基础、恐怖叙事为导向的冒险游戏DEMO，强调氛围营造和玩家探索，同时利用先进引擎技术实现沉浸式体验。
+总而言之，这是一个以动作为基础、恐怖叙事为导向的冒险游戏 DEMO，强调氛围营造和玩家探索，同时利用先进引擎技术实现沉浸式体验。
 
 ---
 
@@ -64,6 +64,7 @@
 * **Unreal Engine 5.4**：
   * 预编译版本（不推荐）：[下载虚幻引擎 - Unreal Engine](https://www.unrealengine.com/zh-CN/download)（约 65 GB，需勾选“输入调试用符号”）
   * 源代码版本（推荐）：[Release Unreal Engine 5.4.4 · EpicGames/UnrealEngine](https://github.com/EpicGames/UnrealEngine/releases/tag/5.4.4-release)（约 200 GB）
+	* 虚幻引擎 5.5 的下载链接：[Release Unreal Engine 5.5.4 · EpicGames/UnrealEngine](https://github.com/EpicGames/UnrealEngine/releases/tag/5.5.4-release)
     * 若无法访问源代码链接，请参阅此手册：[Downloading Source Code in Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/downloading-source-code-in-unreal-engine?application_version=5.4)
 * **Visual Studio 2022**：[Visual Studio 2022 IDE - 适用于软件开发人员的编程工具](https://visualstudio.microsoft.com/zh-hans/vs/)
   * 请确保安装了 [需要的工作负载](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine?application_version=5.4)
@@ -113,8 +114,9 @@
 * **跳跃**：空格键
 * **攻击**：鼠标左键
 * **视角聚焦**：鼠标右键
-* **视角切换**：鼠标中键
-* **技能1**：Q
+* **视角切换**：鼠标中键 + 鼠标滚轮
+* **冲刺**：Left Shift
+* **下蹲**：C
 * To Be Continued...
 
 ---
@@ -170,19 +172,23 @@ Content/
 
 ---
 
+## 版本控制
+
+[语义化版本 2.0.0 | Semantic Versioning](https://semver.org/lang/zh-CN/)
+
 ## 许可证
 
 本项目采用 [MIT License](LICENSE) 开源许可证。
 
 ---
 
-## 联系方式与致谢
+## 联系与致谢
 
 ### 联系方式
 
 * OneCuriousLearner - [j15112850518@163.com](mailto:j15112850518@163.com)
 * 项目链接：[https://github.com/OneCuriousLearner/YourPrjkt](https://github.com/OneCuriousLearner/YourPrjkt)
-* DeepWiki 文档 - [MCP_Agent:RE 系统概览 Wiki](https://github.com/OneCuriousLearner/YourPrjkt/wiki)
+* DeepWiki 文档 - [YourPrjkt 系统概览 Wiki](https://github.com/OneCuriousLearner/YourPrjkt/wiki)
 
 ### 致谢
 
