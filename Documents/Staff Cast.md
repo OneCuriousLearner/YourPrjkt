@@ -58,30 +58,13 @@ Stylized Sword Trails VFX
 
 — 音乐 & 音效 —
 
-德彪西《叙事曲》 (CCPIANO)
-
-Pass Sacaglia《Abandoned》
-
-Wee Scary Beasties《Creepy Lullaby》
-
-Aroo《Deep Web:Dark Net》
-
-Horror Ambience《Horror》
-
-Michael Rothery《Dark Seas》
-
-きくお《CULT》
-
-Franco Robert《Frozen Memory》
+Kevin MacLead · Bryan Teah · Rafel Krux
 
 50 Free Game Sounds Pack
 © PlaceHolder Inc
 
 Free Realistic Sword Sound Effects Pack
 © Modern Monkey Studios
-
-R7CKY · 増田俊郎 · 昙轩 · 吉森信 · 昼夜 · 1n
-水月陵 · Enzalla · 澤野弘之 · C418 · 橙光音乐
 
 
 
